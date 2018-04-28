@@ -4,26 +4,18 @@ public class Item {
 
 	private String sku;
 
-	private int unitPrice;
+	private int price;
 
-	public Item(String sku, int unitPrice) {
+	public Item(String sku, int price) {
 		this.sku = sku;
-		this.unitPrice = unitPrice;
+		this.price = price;
 	}
 
 	public String getSku() {
 		return sku;
 	}
 
-	public void setSku(String sku) {
-		this.sku = sku;
-	}
-
-	public int getUnitPrice() {
-		return unitPrice;
-	}
-
-	public void setUnitPrice(int unitPrice) {
-		this.unitPrice = unitPrice;
+	public int getPrice() {
+		return price;
 	}
 }

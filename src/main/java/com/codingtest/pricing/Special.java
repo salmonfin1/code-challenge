@@ -1,40 +1,15 @@
 package com.codingtest.pricing;
 
-public class Special {
-
-	private String sku;
+public class Special extends Item {
 
 	private int quantity;
 
-	private int price;
-
-	public Special(String sku, int quantity, int price) {
-		this.sku = sku;
+	public Special(String sku, int price, int quantity) {
+		super(sku, price);
 		this.quantity = quantity;
-		this.price = price;
-	}
-
-	public String getSku() {
-		return sku;
-	}
-
-	public void setSku(String sku) {
-		this.sku = sku;
 	}
 
 	public int getQuantity() {
 		return quantity;
-	}
-
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-
-	public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
 	}
 }
