@@ -5,6 +5,7 @@ import com.codingtest.pricing.Item;
 import com.codingtest.pricing.Special;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -20,5 +21,6 @@ public class Main {
 		specials.add(new Special("B", 2, 45));
 		Checkout checkout = new Checkout();
 		checkout.setPricingRules(specials, items);
+		checkout.checkout(Arrays.asList("A","A","B","A"));
 	}
 }
